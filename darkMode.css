@@ -54,10 +54,16 @@ body {
   display: flex;
   gap: 40px;
 }
+.navBar ul li {
+  transition: 1s;
+}
 .navBar ul li,
 a {
   list-style-type: none;
   text-decoration: none;
+}
+.navBar ul li:hover {
+  transform: scale(1.2);
 }
 .toggle {
   margin: 0px 10px;
@@ -79,6 +85,8 @@ a {
   font-family: var(--font-content);
   display: flex;
   justify-content: space-between;
+  position: relative;
+  margin: 0px 20px;
 }
 
 .content_left {
@@ -104,6 +112,10 @@ a {
   margin: 40px 14px;
   background-color: var(--btn-btn);
   color: #ffffff;
+  border: none;
+}
+.content_btn:hover {
+  background-color: #f3633c;
 }
 .content_btn_2 {
   background-color: #f47754;
